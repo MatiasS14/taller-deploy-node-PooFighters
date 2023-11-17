@@ -9,7 +9,7 @@ require('dotenv').config();
 app.use(express.json())
 app.use(cors());
 
-mongoose.connect("mongodb://localhost:27017/deploy", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://root:root@cluster0.eor5nz1.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Conectado a MongoDB Atlas');
   })
